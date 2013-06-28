@@ -24,9 +24,15 @@
                         </div>
                     </div>
                     <div class="control-group">
-                        <label class="control-label" for="terminal">Terminal</label>
+                        <label class="control-label">Terminal</label>
                         <div class="controls">
-                            <input type="checkbox" id="terminal">
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">Replace</label>
+                        <div class="controls">
+                            <input type="checkbox">
                         </div>
                     </div>
                     <div class="control-group">
@@ -51,14 +57,54 @@
                         <div class="controls">
                             <input type="checkbox" >
                             <span class="help-inline">Element</span>
+                        </div>
+                        <div class="controls">
                             <input type="checkbox" >
                             <span class="help-inline">Attribute</span>
+                        </div>
+                        <div class="controls">
                             <input type="checkbox" >
                             <span class="help-inline">Class</span>
+                        </div>
+                        <div class="controls">
                             <input type="checkbox" >
                             <span class="help-inline">Comment</span>
                         </div>
                     </div>
+                    <div class="control-group">
+                        <label class="control-label">Require</label>
+                        <div class="controls">
+                            <select>
+                                <option value="">Select One</option>
+                                <option value="?">Optional</option>
+                                <option value="^">On Parent</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" >Template Url</label>
+                        <div class="controls">
+                            <input type="text" placeholder="Template Url" class="input-large">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" >Template</label>
+                        <div class="controls">
+                            <textarea placeholder="template">
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">Transclude</label>
+                        <div class="controls">
+                            <select>
+                                <option value="">Select One</option>
+                                <option value="?">Transclude everything</option>
+                                <option value="^">Transclude an element</option>
+                            </select>
+                        </div>
+                    </div>
+
                 </form>
             </div>
             <div class="span6">
