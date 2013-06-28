@@ -6,7 +6,66 @@
     <link rel='stylesheet' href='/stylesheets/style.css'/>
 </head>
 <body>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span6 right-line">
+                <form class="form-horizontal">
+                    <legend>Directive Builder</legend>
+                    <div class="control-group">
+                        <label class="control-label" for="directiveName">Directive Name</label>
+                        <div class="controls">
+                            <input type="text" id="directiveName" placeholder="Directive Name">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="priority">Priority</label>
+                        <div class="controls">
+                            <input type="number" id="priority" placeholder="Priority">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="terminal">Terminal</label>
+                        <div class="controls">
+                            <input type="checkbox" id="terminal">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">Scope</label>
+                        <div class="controls">
+                            <input type="checkbox" >
+                            <span class="help-inline">Child Scope</span>
+                        </div>
+                        <div class="controls">
+                            <input type="checkbox">
+                            <span class="help-inline">Isolate Scope</span>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">Scope Variables</label>
+                        <div class="controls">
+                            <select><option></option></select>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">Restrict</label>
+                        <div class="controls">
+                            <input type="checkbox" >
+                            <span class="help-inline">Element</span>
+                            <input type="checkbox" >
+                            <span class="help-inline">Attribute</span>
+                            <input type="checkbox" >
+                            <span class="help-inline">Class</span>
+                            <input type="checkbox" >
+                            <span class="help-inline">Comment</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="span6">
 
+            </div>
+        </div>
+    </div>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
     <script type="text/javascript" src="/javascripts/app/app.js"></script>
     <script type="text/javascript" src="/javascripts/app/builder/builder.js"></script>
