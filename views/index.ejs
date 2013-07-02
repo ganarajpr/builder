@@ -8,41 +8,45 @@
 <body>
     <div class="container-fluid">
         <div class="row-fluid">
-            <div class="span6 right-line">
+            <div class="span6 right-line" ng-controller="DirectiveBuilderController">
                 <form class="form-horizontal">
                     <legend>Directive Builder</legend>
                     <div class="control-group">
                         <label class="control-label" for="directiveName">Directive Name</label>
                         <div class="controls">
-                            <input type="text" id="directiveName" placeholder="Directive Name">
+                            <input type="text" id="directiveName" ng-model="directive.name" placeholder="Directive Name">
                         </div>
                     </div>
                     <div class="control-group">
                         <label class="control-label" for="priority">Priority</label>
                         <div class="controls">
-                            <input type="number" id="priority" placeholder="Priority">
+                            <input type="number" id="priority" ng-model="directive.priority" placeholder="Priority">
                         </div>
                     </div>
                     <div class="control-group">
                         <label class="control-label">Terminal</label>
                         <div class="controls">
-                            <input type="checkbox">
+                            <input type="checkbox" ng-model="directive.terminal">
                         </div>
                     </div>
                     <div class="control-group">
                         <label class="control-label">Replace</label>
                         <div class="controls">
-                            <input type="checkbox">
+                            <input type="checkbox" ng-model="directive.replace">
                         </div>
                     </div>
                     <div class="control-group">
                         <label class="control-label">Scope</label>
                         <div class="controls">
-                            <input type="checkbox" >
+                            <input type="radio" >
+                            <span class="help-inline">Controller Scope</span>
+                        </div>
+                        <div class="controls">
+                            <input type="radio" >
                             <span class="help-inline">Child Scope</span>
                         </div>
                         <div class="controls">
-                            <input type="checkbox">
+                            <input type="radio">
                             <span class="help-inline">Isolate Scope</span>
                         </div>
                     </div>
@@ -117,7 +121,8 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
     <script type="text/javascript" src="/javascripts/app/app.js"></script>
     <script type="text/javascript" src="/javascripts/app/builder/builder.js"></script>
-    <script type="text/javascript" src="/javascripts/app/builder/builder.js"></script>
+    <script type="text/javascript" src="/javascripts/app/builder/controller/DirectiveBuilderController.js"></script>
+    <script type="text/javascript" src="/javascripts/app/builder/services/DirectiveService.js"></script>
 
 </body>
 </html>
